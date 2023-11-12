@@ -1,0 +1,78 @@
+.textcard {
+  margin: 30px;
+  text-align: center;
+  color: #525560;
+  font-family: "Manrope";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 38.4px */
+  letter-spacing: -0.24px;
+}
+.MonScan {
+  margin-top: 100px;
+}
+
+.Titluserv {
+  margin-bottom: 40px;
+  text-align: center;
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 54px */
+  letter-spacing: -0.45px;
+}
+
+.ServBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5em;
+}
+
+.textcontainer {
+  width: 580px;
+  height: 330px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #eff7f2;
+}
+
+/* Styles for screens smaller than 768px (adjust as needed) */
+@media (max-width: 768px) {
+  .textcard {
+    margin: 15px; /* Reduce margin */
+    font-size: 18px; /* Decrease font size */
+    letter-spacing: -0.18px; /* Adjust letter spacing */
+  }
+
+  .MonScan {
+    margin-top: 50px; /* Adjust top margin */
+  }
+
+  .Titluserv {
+    margin-bottom: 20px; /* Adjust bottom margin */
+    font-size: 36px; /* Decrease font size */
+    letter-spacing: -0.36px; /* Adjust letter spacing */
+  }
+
+  .ServBlock {
+    display: block; /* Change to block layout */
+    text-align: center; /* Center align content */
+    gap: 1em; /* Reduce the gap */
+  }
+
+  .textcontainer {
+    width: 100%; /* Make it full width */
+    height: auto; /* Adjust height as needed */
+    border-radius: 20px; /* Reduce border radius */
+  }
+
+  .imgservblock {
+    margin: 0px;
+    width: 100%; /* Make it full width */
+    height: auto; /* Adjust height as needed */
+  }
+}

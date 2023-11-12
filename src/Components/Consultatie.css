@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,300;1,9..40,400;1,9..40,600;1,9..40,700;1,9..40,800&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700&family=Manrope:wght@400;500;600;700;800&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap");
+
+.ConsultatieMain {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 166px;
+}
+
+.telefon {
+  display: flex;
+  margin-bottom: 30px;
+}
+.platformsimg {
+  width: 150px;
+  margin: 0px;
+}
+.contactetext {
+  width: 125px;
+  height: 24;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  border-radius: 20px;
+  background: #ffcc4a;
+}
+
+.textcontact {
+  color: #181818;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 147.5%; /* 23.6px */
+  letter-spacing: 2.32px;
+  text-transform: uppercase;
+}
+
+.telefonpar {
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0px;
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+
+.interesat {
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.32px;
+  margin-bottom: 0px;
+}
+.trimitemesaj {
+  margin-top: 13px;
+  margin-bottom: 38px;
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 54px */
+  letter-spacing: -0.45px;
+}
+
+.consultatieright {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+
+.inputcontainer {
+  display: flex;
+}
+
+.inputname2 {
+  margin-left: 34px;
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.2px;
+  margin-bottom: 10px;
+}
+
+.inputname1 {
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.2px;
+  margin-bottom: 10px;
+}
+
+.input-name {
+  border-radius: 20px;
+  border: 1px solid #c1c1c1;
+  background: #fff;
+  width: 225px;
+  height: 68px;
+  font-size: 14px;
+  color: #4b4b4b;
+  font-family: "Raleway";
+}
+
+.input-telefon {
+  margin-left: 25px;
+  border-radius: 20px;
+  border: 1px solid #c1c1c1;
+  background: #fff;
+  width: 324px;
+  height: 68px;
+  font-size: 14px;
+  color: #4b4b4b;
+  font-family: "Raleway";
+}
+
+.input-email {
+  margin-left: 25px;
+  border-radius: 20px;
+  border: 1px solid #c1c1c1;
+  background: #fff;
+  width: 583px;
+  height: 68px;
+  font-size: 14px;
+  color: #4b4b4b;
+  font-family: "Raleway";
+  margin: 0px;
+  padding: 0px;
+}
+.inputname3 {
+  margin-left: 0px;
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.2px;
+}
+
+.inputmare {
+  border-radius: 22px;
+  border: 1px solid #c1c1c1;
+  background: #fff;
+  width: 583px;
+  height: 157px;
+  margin-bottom: 28px;
+  font-size: 34px;
+  color: #4b4b4b;
+  font-family: "Raleway";
+  vertical-align: top;
+  text-align: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.btntrimite {
+  margin: 0px;
+  align-items: left;
+  border-radius: 42px;
+  background: #a4eda4;
+  height: 61px;
+  width: 168px;
+  border: none;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.btntrimite:hover {
+  background: #85d185;
+  transition: 0.6s;
+}
+
+.textmesaj {
+  margin-top: 15px;
+  align-items: center;
+  text-align: center;
+  color: #4b4b4b;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+.input-name:focus {
+  border-color: #c2edd3;
+  box-shadow: 0 0 3px #a2d6a5;
+  outline-offset: 0px;
+  outline: none;
+}
+.input-telefon:focus {
+  border-color: #c2edd3;
+  box-shadow: 0 0 3px #a2d6a5;
+  outline-offset: 0px;
+  outline: none;
+}
+.input-email:focus {
+  border-color: #c2edd3;
+  box-shadow: 0 0 3px #a2d6a5;
+  outline-offset: 0px;
+  outline: none;
+}
+
+.inputmare:focus {
+  border-color: #c2edd3;
+  box-shadow: 0 0 3px #a2d6a5;
+  outline-offset: 0px;
+  outline: none;
+}
+
+.inputmare::placeholder {
+  font-family: "Raleway";
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .ConsultatieMain {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+
+  .telefon {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .contactetext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .textcontact {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .telefonpar {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .interesat,
+  .trimitemesaj {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .consultatieright {
+    display: block;
+    margin-left: 0;
+  }
+
+  .inputcontainer {
+    display: block;
+  }
+
+  .inputname1,
+  .inputname2,
+  .inputname3 {
+    margin-left: 0;
+  }
+
+  .input-name,
+  .input-telefon,
+  .input-email {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 20px !important;
+    border: 1px solid #c1c1c1;
+    background: #fff;
+    font-size: 14px;
+    margin: 0px;
+    color: #4b4b4b;
+    font-family: "Raleway";
+  }
+
+  .inputmare {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .btntrimite {
+    margin: 0;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+  }
+
+  .textmesaj {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .input-name::placeholder,
+  .input-telefon::placeholder,
+  .input-email::placeholder,
+  .inputmare::placeholder {
+    font-size: 14px;
+  }
+}

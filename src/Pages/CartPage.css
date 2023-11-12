@@ -1,0 +1,560 @@
+.cartpage {
+  margin: 0px;
+  padding: 0px !important;
+  background-color: #ffff;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.cardcontainer_left {
+  width: 500px;
+}
+.carddrone {
+  margin-left: 40px;
+  width: 270px;
+}
+.selected_cards {
+  flex-wrap: wrap;
+}
+.title_cart {
+  margin-top: 100px !important;
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.45px;
+}
+
+.input_cart {
+  display: flex;
+}
+
+.input_email {
+  margin-bottom: 0px;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.parinput {
+  align-self: flex-start;
+  margin-bottom: 8px !important;
+  margin: 0px;
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.2px;
+}
+.error-message {
+  font-family: Raleway;
+  font-weight: 600;
+  margin-right: 20px;
+  color: red;
+  font-size: 12px;
+  align-self: flex-end;
+}
+
+.mainCart {
+  display: flex;
+  justify-content: center;
+  gap: 15em;
+}
+.cartimg {
+  width: 160px;
+  height: 150px;
+}
+.cart_card {
+  display: flex;
+  border: 1px solid #c1c1c1b7;
+  width: 700px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn_cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.btn_cart_forma {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.2px;
+  border: none;
+  margin-top: 35px;
+  width: 233.186px;
+  height: 49px;
+  border-radius: 20px;
+  background: #56c73a;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn_cart_forma:hover {
+  background: #4dab4d;
+  transition: 0.6s;
+}
+.imgforcart {
+  width: 180px;
+  height: 150px;
+}
+
+.btn_adauga {
+  display: flex;
+}
+.btn_red {
+  align-items: center;
+  margin-left: 100px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  border-radius: 5px;
+  background-color: rgb(251, 106, 106);
+  transition: 0.5s;
+}
+
+.btn_red:hover {
+  transition: 0.5s;
+  background-color: rgb(230, 65, 65);
+}
+
+.btn_cart_style {
+  padding: 0px;
+  color: #f4f4f4;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.2px;
+  margin: 20px;
+  border: none;
+  width: 45px;
+  height: 34px;
+  border-radius: 5px;
+  background: #56c73a;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tabel_container {
+  display: flex;
+  flex-direction: column;
+}
+.trash {
+  margin: 0px;
+  padding: 0px;
+  width: 25px;
+  height: 25px;
+}
+.table_title {
+  margin-top: 100px;
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.45px;
+}
+
+.table_price {
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.35px;
+}
+.span_price {
+  color: #56c73a;
+  font-family: Raleway;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.35px;
+}
+
+table.tabel {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  width: 339px;
+  height: 46px;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.24px;
+  text-align: center;
+  background-color: #56c73a;
+  color: #fbf2f2;
+}
+
+th:nth-child(2) {
+  background-color: #bacbb6;
+}
+
+td {
+  text-align: center;
+  background-color: white;
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.2px;
+  border: 1px solid #bacbb6;
+  padding: 8px;
+}
+
+.factura {
+  position: static;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 690px;
+  height: 630px;
+  border-radius: 20px;
+  background: #f7fbf7;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.text_factura {
+  text-align: center;
+  color: var(--gray-scale-800, #4b4848);
+  font-family: Raleway;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.45px;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
+.input-email {
+  border: 1px solid #ccc !important;
+  padding: 10px !important;
+  border-radius: 5px !important;
+  font-size: 16px !important;
+}
+
+.inputname_small {
+  width: 233.186px;
+  height: 49px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: #fff;
+}
+
+.numeprenume_factura {
+  gap: 2em;
+}
+.inputname_big {
+  width: 506.239px;
+  height: 49px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: #fff;
+}
+.email_validation {
+  align-self: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+.inputFACTURA {
+  width: 500px;
+  margin-bottom: 10px;
+  height: 60px;
+  border-radius: 20px;
+  border: 1px solid rgb(203, 227, 212);
+  margin-bottom: 20px;
+  color: #4b4b4b;
+  font-family: "Raleway";
+}
+
+.inputFACTURA:focus {
+  border-color: #c2edd3;
+  box-shadow: 0 0 3px #a2d6a5;
+  outline-offset: 0px;
+  outline: none;
+}
+
+.formbase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btnform {
+  width: 150px !important;
+  background-color: #65ce65 !important;
+  height: 45px !important;
+  transition: 0.6s !important;
+  letter-spacing: 1px !important;
+}
+.btnform:hover {
+  transition: 0.6s !important;
+  background-color: #409b29 !important;
+}
+
+.Noitems {
+  width: 500px;
+  height: 300px;
+  margin-top: 50px;
+}
+.noitemstext {
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+.noitemsblock {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Styles for screens smaller than 768px (adjust as needed) */
+@media (max-width: 768px) {
+  .cardcontainer_left {
+    width: 100%; /* Make the container full-width */
+  }
+
+  .mainCart {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 1em; /* Add spacing between elements */
+  }
+
+  .btn_cart {
+    margin-left: 0; /* Remove left margin */
+    margin-top: 20px; /* Add top margin */
+  }
+
+  .btn_cart_forma {
+    width: 100%; /* Make the button full-width */
+    margin-top: 20px; /* Add top margin */
+  }
+
+  .imgforcart {
+    width: 100%; /* Make the image full-width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .btn_adauga {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+  }
+
+  .btn_red,
+  .btn_cart_style {
+    width: 40px; /* Adjust button width */
+    height: 40px; /* Adjust button height */
+    margin: 5px 0; /* Add margin between buttons */
+  }
+
+  .tabel_container {
+    width: 100%; /* Make the table container full-width */
+  }
+
+  .table_title,
+  .table_price,
+  .span_price {
+    font-size: 24px; /* Adjust font size */
+    letter-spacing: -0.24px; /* Adjust letter spacing */
+  }
+
+  .factura {
+    width: 100%; /* Make the invoice container full-width */
+  }
+
+  .text_factura {
+    font-size: 30px; /* Adjust font size */
+    letter-spacing: -0.3px; /* Adjust letter spacing */
+    margin-bottom: 20px; /* Add bottom margin */
+  }
+
+  .input-email {
+    width: 100%; /* Make the input full-width */
+  }
+
+  .inputname_small {
+    width: 100%; /* Make the input full-width */
+  }
+
+  .numeprenume_factura {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 1em; /* Add spacing between elements */
+  }
+
+  .inputname_big {
+    width: 100%; /* Make the input full-width */
+  }
+
+  .email_validation {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 1em; /* Add spacing between elements */
+  }
+
+  .inputFACTURA {
+    width: 100%; /* Make the input full-width */
+    height: 50px; /* Adjust input height */
+  }
+
+  .formbase {
+    text-align: center; /* Center text within the container */
+  }
+
+  .btnform {
+    width: 100%; /* Make the button full-width */
+    margin-top: 20px; /* Add top margin */
+  }
+
+  .Noitems {
+    width: 100%; /* Make the container full-width */
+    height: auto; /* Allow height to adjust based on content */
+    margin: 20px 0;
+  }
+
+  .noitemstext {
+    font-size: 24px; /* Adjust font size */
+  }
+
+  .noitemsblock {
+    text-align: center; /* Center text within the container */
+  }
+}
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+  .cart_card {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column; /* Stack card contents vertically */
+    border: 1px solid #c1c1c1b7;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 100%; /* Make the card full-width */
+  }
+
+  .btn_cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Add spacing around the button */
+  }
+  .carddronetext {
+    text-align: center;
+  }
+  .btn_cart_forma {
+    color: #fff;
+    font-family: Raleway;
+    font-size: 18px; /* Adjust font size */
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.2px;
+    border: none;
+    margin: 10px 0; /* Adjust margin */
+    width: 100%; /* Make the button full-width */
+    height: 45px; /* Adjust button height */
+    border-radius: 20px;
+    background: #56c73a;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .btn_cart_forma:hover {
+    background: #4dab4d;
+    transition: 0.6s;
+  }
+
+  .imgforcart {
+    width: 100%; /* Make the image full-width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .btn_adauga {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+  }
+
+  .btn_red {
+    align-items: center;
+    margin-left: 20px !important;
+    margin: 10px 0; /* Adjust margin */
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 5px;
+    background-color: rgb(251, 106, 106);
+    transition: 0.5s;
+  }
+
+  .btn_red:hover {
+    background-color: rgb(230, 65, 65);
+  }
+
+  .btn_cart_style {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    padding: 0;
+    color: #f4f4f4;
+    font-family: Raleway;
+    font-size: 18px; /* Adjust font size */
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.2px;
+    margin: 10px 0; /* Adjust margin */
+    border: none;
+    width: 45px;
+    height: 34px;
+    border-radius: 5px;
+    background: #56c73a;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .tabel_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carddrone {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: 20px !important;
+  }
+
+  .trash {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+  }
+}

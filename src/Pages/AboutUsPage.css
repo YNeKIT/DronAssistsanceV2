@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,300;1,9..40,400;1,9..40,600;1,9..40,700;1,9..40,800&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700&family=Manrope:wght@400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap");
+
+.mainabout {
+  overflow-x: hidden;
+}
+
+.avatarpart {
+  display: flex;
+}
+.bottom_avatar_part {
+  color: #000;
+
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 30px */
+}
+.avatarname {
+  text-align: left;
+  margin-bottom: 0px;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+}
+
+.avatarinfo {
+  margin-left: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.avatarstatus {
+  margin-top: 0px;
+  color: var(--gray-scale-gray-400, #999);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.leftside {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 444px;
+}
+
+.ghilimele {
+  width: 40px;
+  height: 37px;
+}
+.containerside {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.rightside {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 150px;
+}
+
+.infocard {
+  width: 231px;
+}
+
+.point {
+  margin: 0px;
+  padding: 0px;
+}
+
+.infocardtext {
+  margin: 0px;
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 28px */
+  letter-spacing: -0.2px;
+}
+
+.infocardpar {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: var(--gray-scale-800, #4b4b4b);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 22.5px */
+}
+.titleright {
+  margin-bottom: 5px;
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.32px;
+}
+
+.containerinfo {
+  margin: 5px;
+  gap: 1.4em;
+  width: 487px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.parlef {
+  margin-bottom: 40px;
+  color: #000;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 30px */
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.proiectul_nostru {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title_proiectul_nostru {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linie_proiect {
+  stroke-width: 2px;
+  stroke: var(--Primary-text, #1d2130);
+  width: 72px;
+  height: 1px;
+}
+
+.title_text_proiect {
+  margin-left: 24px;
+  color: var(--Primary-text, #1d2130);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.text_viitor_agricultura {
+  width: 571px;
+  color: #56c73a;
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 60px */
+}
+
+.par_viitor_agricult {
+  margin-bottom: 70px;
+  width: 832px;
+  color: var(--Secondary-text, #525560);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 230%; /* 25.6px */
+}
+
+.container_background_viitor {
+  position: relative;
+  width: 1280px;
+  height: 384px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container_background_viitor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Img/imgechipa.png);
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.text_echipa {
+  margin-top: 100px;
+  color: #fff;
+  text-align: center;
+  /* H2 */
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+}
+
+.btn_viitor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 51px;
+  width: 173px;
+  border: none;
+  border-radius: 50px;
+  background: var(--Green-primary, #70c174);
+  backdrop-filter: blur(40px);
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.btn_viitor:hover {
+  transition: 0.5s;
+  background: var(--Green-primary, #56ad5a);
+}
+
+@media (max-width: 768px) {
+  .avatarpart {
+    display: block;
+  }
+  .avatarname {
+    margin-left: 15px;
+  }
+
+  .avatarinfo {
+    margin-left: 10px;
+  }
+
+  .leftside,
+  .rightside {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ghilimele {
+    display: none;
+  }
+
+  .containerside {
+    margin-left: 20px !important;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .infocard {
+    width: 100%;
+  }
+
+  .infocardtext {
+    font-size: 16px;
+  }
+
+  .infocardpar {
+    font-size: 14px;
+  }
+
+  .titleright,
+  .parlef {
+    text-align: center;
+  }
+
+  .center-content {
+    margin-bottom: 50px;
+  }
+
+  .title_proiectul_nostru {
+    display: block;
+    text-align: center;
+  }
+
+  .linie_proiect {
+    display: none;
+  }
+
+  .title_text_proiect {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .text_viitor_agricultura {
+    color: #56c73a;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .par_viitor_agricult {
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 400px;
+    font-size: 14px;
+  }
+
+  .container_background_viitor {
+    width: 100%;
+    height: auto;
+  }
+
+  .text_echipa {
+    margin-top: 50px;
+    font-size: 36px;
+  }
+
+  .btn_viitor {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+  }
+}

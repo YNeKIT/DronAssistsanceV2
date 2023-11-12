@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.salesmain {
+  padding: 0px !important;
+  margin: 0px;
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.inputCostum {
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #ebf6ee;
+  width: 43.25rem;
+  height: 45px;
+  background-color: #ebf6ee;
+  margin-left: 5.8125rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.btnandinput {
+  display: flex;
+}
+.btn_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  background-color: #ebf6ee;
+  border: 1px solid #ebf6ee;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: 0.5s;
+}
+.btn_input:hover {
+  transition: 0.5s;
+  background-color: #d4eeda;
+}
+.lupabtn {
+  margin-right: 10px;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  transition: 0.6s;
+}
+.lupabtn:hover {
+  width: 30px;
+  height: 40px;
+  transition: 0.6s;
+}
+.inputCostum:focus {
+  border-color: #c2edd3;
+  box-shadow: 0 0 3px #a2d6a5;
+  outline-offset: 0px;
+  outline: none;
+}
+input::placeholder {
+  padding: 40px;
+  font-family: "Raleway";
+  font-size: 14px;
+}
+
+.PageTitle {
+  margin-left: 5.8125rem;
+  margin-top: 5.3rem;
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: "Raleway";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 54px */
+  letter-spacing: -0.45px;
+}
+.NoFound {
+  width: 300px;
+  height: 250;
+  margin: 0px;
+}
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nofoundtext {
+  margin: 0px;
+  color: var(--gray-scale-800, #6b6868);
+  font-family: "Raleway";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 30px */
+  letter-spacing: -0.25px;
+}
+.rezultate {
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: "Raleway";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 30px */
+  letter-spacing: -0.25px;
+  margin-top: 30px;
+  margin-left: 5.8125rem;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+.btnpag {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  gap: 1em;
+  width: 32px;
+  height: 26px;
+  background-color: #54e031;
+  cursor: pointer;
+}
+.active {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  gap: 1em;
+  width: 32px;
+  height: 26px;
+  background-color: #38a51c;
+}
+
+/* Modal.css */
+
+.modal {
+  transition: 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Adjust the z-index to ensure it overlays other content */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.modal-content p {
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: "Raleway";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 30px */
+  letter-spacing: -0.25px;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #00ff51;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #1dc441;
+}
+.doneanimated {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Done {
+  width: 200px;
+  height: 200px;
+}
+
+/* Add media queries for responsiveness */
+
+.cardcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align cards to the start of the row */
+  gap: 20px; /* Adjust the gap between cards as needed */
+  margin-left: 10.8125rem; /* Adjust margin as needed */
+}
+
+.card {
+  flex-basis: calc(25% - 20px); /* 4 cards in a row with 20px gap */
+  box-sizing: border-box; /* Include padding and border in the card's width */
+
+  padding: 10px; /* Add padding as needed for spacing within cards */
+  text-align: center; /* Center card contents */
+
+  width: 235px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  justify-content: center;
+  margin-right: 108px;
+  margin-bottom: 40px;
+}
+
+.cardname {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.2px;
+}
+.cardprice {
+  margin-top: 0px;
+  text-align: center;
+  color: #56c73a;
+  font-family: "Rambla";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.2px;
+}
+
+.cardbtn {
+  width: 122px;
+  height: 38px;
+  flex-shrink: 0;
+  background: #56c73a;
+  border: none;
+  border-radius: 5px;
+  color: var(--white-1000, #fff);
+  font-family: "Raleway";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 22.5px */
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.cardbtn:hover {
+  background: #49a831;
+  transition: 0.5s;
+}
+
+.imgcard {
+  width: 235px;
+  height: 173px;
+}
+
+/* Styles for screens smaller than 768px (adjust as needed) */
+@media (max-width: 768px) {
+  .salesmain {
+    margin-top: 50px;
+    text-align: center; /* Center content */
+  }
+
+  .inputCostum {
+    width: 100%; /* Make the input full-width */
+    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0;
+  }
+
+  .btnandinput {
+    flex-direction: column; /* Stack the button below the input */
+  }
+
+  .btn_input {
+    width: 100%; /* Make the button full-width */
+    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 10px; /* Add some spacing */
+  }
+
+  .lupabtn {
+    margin-right: 0; /* Remove margin-right */
+    width: 25px;
+    height: 25px;
+  }
+
+  .lupabtn:hover {
+    width: 30px;
+    height: 30px;
+  }
+
+  .inputCostum:focus {
+    box-shadow: none; /* Remove the box-shadow on focus */
+    border-color: #ebf6ee; /* Reset border color on focus */
+  }
+
+  input::placeholder {
+    padding: 0; /* Remove the large padding */
+    font-size: 14px;
+  }
+
+  .PageTitle {
+    margin: 0; /* Remove margin-left and margin-top */
+    font-size: 30px; /* Adjust font size */
+    letter-spacing: -0.3px; /* Adjust letter spacing */
+  }
+
+  .NoFound {
+    width: 100%; /* Make the width full */
+    height: auto; /* Allow height to adjust based on content */
+    text-align: center; /* Center the element */
+    margin: 20px 0;
+  }
+
+  .centered-container {
+    text-align: center; /* Center text within the container */
+  }
+
+  .nofoundtext {
+    font-size: 20px; /* Adjust font size */
+    letter-spacing: -0.2px; /* Adjust letter spacing */
+    margin: 10px 0;
+  }
+
+  .rezultate {
+    margin: 0; /* Remove margin-left and margin-top */
+    font-size: 20px; /* Adjust font size */
+    letter-spacing: -0.2px; /* Adjust letter spacing */
+  }
+
+  .pagination {
+    gap: 0.3em; /* Reduce gap between pagination buttons */
+  }
+
+  .btnpag,
+  .active {
+    font-size: 12px; /* Adjust font size */
+    width: 24px; /* Adjust button size */
+    height: 24px;
+    border-radius: 5px;
+    gap: 0.2em; /* Reduce gap between text and icon */
+  }
+
+  .modal {
+    transition: 0.6s;
+  }
+
+  .modal-content p {
+    font-size: 20px; /* Adjust font size */
+    letter-spacing: -0.2px; /* Adjust letter spacing */
+  }
+
+  .modal-content button {
+    padding: 10px 15px; /* Adjust button padding */
+  }
+
+  .Done {
+    width: 100px; /* Adjust the width */
+    height: 100px; /* Adjust the height */
+  }
+
+  .cardcontainer {
+    margin-left: 0; /* Remove the margin-left */
+  }
+
+  .card {
+    flex-basis: 100%; /* Make cards full-width */
+    margin: 20px 0; /* Add margin between cards */
+  }
+}

@@ -1,0 +1,381 @@
+/* Global styles */
+:root {
+  --Primary-text: #1d2130; /* Define your primary text color */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Use your preferred font stack */
+  background-color: #f0f0f0; /* Set a background color */
+}
+
+.proiectemain {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.componenttitle {
+  color: var(--Primary-text);
+  /* Subheader styles */
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.compslog {
+  text-align: center !important;
+  color: #56c73a;
+  font-family: Raleway, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.containterproiecte {
+  display: flex;
+  justify-content: center;
+  gap: 1.2em;
+  flex-wrap: wrap; /* Allow cards to wrap to the next row */
+}
+
+.cardproiecteone,
+.cardproiectetwo,
+.cardproiectethree {
+  border-radius: 50px;
+  position: relative;
+  width: 100%;
+  max-width: 395px;
+  height: 380px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.background_image,
+.background_image2,
+.background_image3 {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  filter: brightness(50%);
+  border-radius: 12px;
+  transition: 0.5s;
+}
+
+.background_image {
+  background-image: url("../Img/imgofcardone.png");
+}
+
+.background_image2 {
+  background-image: url("../Img/imgofcardtwo.png");
+}
+
+.background_image3 {
+  background-image: url("../Img/imgofcardthree.png");
+}
+
+.text_container {
+  margin: 40px; /* Add margin to create space around text */
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.proiecte_title {
+  color: #fff;
+  margin-bottom: 0px;
+  /* Title styles */
+  font-family: Roboto, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 150%; /* 42px */
+}
+
+.proiecte_par {
+  color: #fff;
+  margin-top: 100px;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.proiecte_btn {
+  margin: 0px;
+  text-align: center;
+  color: var(--Primary-text, #1d2130);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  width: 161px;
+  height: 49px;
+  border-radius: 50px;
+  background: #fff;
+  backdrop-filter: blur(40px);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.proiecte_btn:hover {
+  transition: 0.5s;
+  margin: 0px;
+  text-align: center;
+  color: var(--Primary-text, #1d2130);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  width: 161px;
+  height: 49px;
+  border-radius: 4px;
+  background: #c9eec9;
+  backdrop-filter: blur(40px);
+  /* Button styles */
+}
+
+.evenimente_container {
+  display: flex;
+  justify-content: center;
+  gap: 1.3em;
+}
+
+.container_card {
+  border-radius: 50px;
+  display: flex;
+  width: 590px;
+  height: 191px;
+  background: #bef3c0;
+}
+
+.urmeaza_container {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  justify-content: center;
+}
+
+.linie_evenimente {
+  margin-left: 59px;
+  width: 44px;
+  height: 2px;
+  background: #1d2130;
+}
+
+.title_btn {
+  display: flex;
+  justify-content: center;
+  margin-left: 24px;
+}
+
+.evenimente_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: #4b4b4b;
+  margin-left: 5px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%; /* Set border-radius to 50% for a circle */
+  /* Additional styles for your circular button */
+}
+.text_evenimente {
+  margin-top: 0px;
+  color: #4b4b4b;
+  width: 381px;
+
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 42px */
+}
+.data_numb {
+  margin-bottom: 0px;
+  color: #4b4b4b;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 57.6px */
+  font-variant: small-caps;
+}
+.data_month {
+  margin-top: 0px;
+  color: #4b4b4b;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.urmeaza {
+  color: #4b4b4b;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.data {
+  margin-left: 30px;
+}
+
+.arrow_right {
+  margin-right: 10px;
+}
+
+.cardproiecteone:hover .background_image,
+.cardproiectetwo:hover .background_image2,
+.cardproiectethree:hover .background_image3 {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}
+
+.cardproiecteone,
+.cardproiectetwo,
+.cardproiectethree {
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  transform: scale(1);
+}
+
+.background_image,
+.background_image2,
+.background_image3 {
+  transform-origin: center center;
+}
+
+@media (max-width: 768px) {
+  .proiectemain {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .componenttitle {
+    font-size: 14px;
+  }
+
+  .compslog {
+    font-size: 28px;
+  }
+
+  .containterproiecte {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cardproiecteone,
+  .cardproiectetwo,
+  .cardproiectethree {
+    width: 100%;
+    max-width: initial;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .text_container {
+    margin: 20px;
+  }
+
+  .proiecte_title {
+    font-size: 22px;
+    line-height: 130%;
+  }
+
+  .proiecte_par {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .proiecte_btn {
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+  }
+
+  .evenimente_container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container_card {
+    width: 100%;
+    height: auto;
+  }
+
+  .linie_evenimente {
+    margin-left: 10px;
+    width: 40%;
+  }
+
+  .evenimente_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .text_evenimente {
+    font-size: 20px;
+    line-height: 130%;
+    width: 70%;
+  }
+
+  .data_numb {
+    font-size: 32px;
+    line-height: 110%;
+  }
+
+  .data_month {
+    font-size: 14px;
+  }
+
+  .urmeaza_container {
+    margin-left: 0;
+  }
+
+  .title_btn {
+    margin-left: 0;
+  }
+
+  .urmeaza {
+    margin-left: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .data {
+    margin-left: 20px;
+  }
+
+  .arrow_right {
+    align-items: center;
+  }
+}

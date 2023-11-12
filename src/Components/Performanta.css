@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.performantaMain {
+  display: flex;
+  justify-content: center;
+  margin-right: 73px;
+}
+.textPerformanta {
+  margin-left: 50px;
+}
+
+.performtitle {
+  margin-top: 0px;
+  color: #56c73a;
+  font-family: "Raleway";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 45px */
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+.performslog {
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 54px */
+  letter-spacing: -0.45px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 21px;
+}
+
+.ulcontainers {
+  display: flex;
+  list-style: none;
+  width: 650px;
+  flex-wrap: wrap;
+}
+
+.lista {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 40px;
+  height: auto;
+  width: 284px;
+}
+
+.textul {
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: "Raleway";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 28px */
+  letter-spacing: -0.2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.partext {
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: "Raleway";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.coloane {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listag {
+  display: flex;
+}
+.mobilephoto {
+  display: none;
+}
+
+.performimgformobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .textPerformanta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+  }
+
+  .performantaMain {
+    margin-top: 120px;
+  }
+
+  .forweb {
+    display: none;
+  }
+
+  .mobilephoto {
+    margin-left: 40px;
+    transform: rotate(-90deg);
+    display: block;
+    width: 100%;
+  }
+
+  .performtitle {
+    text-align: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    color: #56c73a;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 45px */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .performslog {
+    color: var(--gray-scale-800, #4b4b4b);
+    font-family: Raleway;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 54px */
+
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 21px;
+  }
+  .ulcontainers {
+    margin-left: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  .performimgformobile {
+    display: block;
+    width: 100%;
+  }
+}

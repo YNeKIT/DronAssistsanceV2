@@ -1,0 +1,122 @@
+.performantaMainTiho {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 130px;
+}
+
+.textulTiho {
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  letter-spacing: -0.48px;
+}
+
+.textTiho {
+  margin-left: 50px;
+}
+
+.textulDracoon {
+  margin-top: 0px;
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  letter-spacing: -0.48px;
+}
+
+.TihoImg {
+  margin-top: 100px;
+  width: 530px;
+  height: 600px;
+}
+
+.TihoImg_web {
+  margin-top: 10px;
+  width: 530px;
+  height: 600px;
+}
+.listaTiho {
+  list-style: none;
+  width: 572px;
+  padding: 0px;
+}
+
+.partextTiho {
+  color: #6d6f78;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 32px */
+}
+
+.performtitleTiho {
+  margin-top: 100px !important;
+  color: #56c73a;
+  font-family: Raleway;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 54px */
+  letter-spacing: 7.2px;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+.TihoImg_mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .performantaMainTiho {
+    margin-top: 0px;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .TihoImg_web {
+    display: none;
+  }
+  .TihoImg_mobile {
+    margin: 0px;
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+  }
+  .textulTiho,
+  .textulDracoon {
+    font-size: 24px;
+    letter-spacing: -0.24px;
+  }
+
+  .textTiho {
+    margin-left: 0;
+  }
+
+  .TihoImg {
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+  }
+
+  .listaTiho {
+    width: 100%;
+  }
+
+  .partextTiho {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .performtitleTiho {
+    font-size: 28px;
+    letter-spacing: 5.6px;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,39 @@
+.MainImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+@media (min-width: 768px) {
+  .video,
+  .imgblock,
+  .videoyt {
+    width: 584px;
+    height: 312px;
+    margin: 0px;
+  }
+  .firsttwo,
+  .secondtwo {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .video,
+  .imgblock,
+  .videoyt {
+    width: 100%;
+    height: auto;
+  }
+  .imgblock {
+    height: auto;
+  }
+  .firsttwo,
+  .secondtwo {
+    display: block;
+    width: 100%;
+  }
+}

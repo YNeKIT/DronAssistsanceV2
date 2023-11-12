@@ -1,0 +1,173 @@
+.MainCap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 150px;
+  margin-top: 40px;
+}
+.titlusiimg {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.captitlu {
+  color: #56c73a;
+  font-family: Raleway;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 54px */
+  letter-spacing: 7.2px;
+  text-transform: uppercase;
+}
+.captext {
+  color: #525c60;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165.4%; /* 33.08px */
+  width: 1100px;
+}
+
+.parteajos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.cumfunct {
+  display: flex;
+  justify-content: center;
+  width: 351px;
+  height: 58px;
+  padding: 2px 8px;
+  border-radius: 36px;
+  background: var(--primary-100, #dcfce7);
+  box-shadow: 0px 1px 2px 0px rgba(105, 81, 255, 0.05);
+}
+
+.cumfuncttitle {
+  color: var(--primary-900, #14532d);
+  font-family: Raleway;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 10px; /* 64.286% */
+}
+
+.numarcont {
+  display: flex;
+}
+
+.imgcapcane {
+  height: 454px;
+  width: 1130px;
+  border-radius: 55px;
+}
+.capcanefir {
+  justify-content: left;
+  text-align: left;
+  color: #274c5b;
+  font-family: Raleway;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.pasiidreapta {
+  width: 1099px;
+  margin-top: 20px;
+}
+.pasiitext {
+  color: #14532d;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.numar {
+  margin-right: 20px;
+  height: 45px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .MainCap {
+    display: block;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 20px;
+  }
+
+  .titlusiimg {
+    display: block;
+    text-align: center;
+  }
+
+  .captitlu {
+    font-size: 28px;
+    letter-spacing: 5.6px;
+  }
+
+  .captext {
+    font-size: 16px;
+    line-height: 150%;
+    width: 100%;
+  }
+
+  .parteajos {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .cumfunct {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .cumfuncttitle {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .numarcont {
+    display: block;
+  }
+
+  .imgcapcane {
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .capcanefir {
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .pasiidreapta {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .pasiitext {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .numar {
+    margin-right: 0;
+    height: auto;
+    margin-top: 20px;
+  }
+}

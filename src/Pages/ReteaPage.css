@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Lato:ital,wght@0,400;0,700;1,700&family=Manrope:wght@400;500;600;700;800&family=Poor+Story&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.MainRetea {
+  margin: 0px;
+  padding: 0px !important;
+  margin-top: 0px;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.colaborare_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.colaborare_text {
+  width: 512px;
+  margin-right: 94px;
+}
+
+.MainRetea {
+  background-color: #ffff;
+}
+
+.colaborare_title {
+  color: #56c73a;
+  font-family: Manrope;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 44.8px */
+  letter-spacing: 1px;
+}
+.colaborare_slogan {
+  width: 542px;
+  color: #4b4b4b;
+  font-family: Manrope;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 62.4px */
+}
+.colaborare_content {
+  color: var(--Off-Black, #151515);
+  font-family: Manrope;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%; /* 44px */
+}
+.colaborare_img {
+  margin-top: 60px;
+}
+/* Second block */
+
+.beneficii_block {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.beneficii_introducere {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.beneficii_oferim_oferim {
+  margin: 0px;
+  color: #fff;
+  text-align: center;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 147.5%; /* 29.5px */
+  letter-spacing: 2.9px;
+  text-transform: uppercase;
+  width: 100%;
+  height: auto;
+}
+
+.beneficii_oferim {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  width: 195px;
+  height: auto;
+  justify-content: center;
+  border-radius: 20px;
+  background: #56c73a;
+}
+
+.beneficii_oferim_text {
+  color: #4b4b4b;
+  width: 781.869px;
+  text-align: center;
+  font-family: Cabin;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 116%; /* 52.2px */
+}
+
+.beneficii_card_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.beneficii_card {
+  display: flex;
+  width: 382px;
+  height: 327px;
+  padding: 49px 47px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #eff7f2;
+}
+.beneficii_card_title {
+  color: #4b4b4b;
+  margin: 0px;
+  font-family: "Cabin";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 116%; /* 29px */
+}
+
+.beneficii_card_content {
+  color: #595566;
+  font-family: "Lato";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 147.5%; /* 23.6px */
+}
+
+.contributie_block {
+  margin-bottom: 117px;
+  margin-top: 164px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contributie_right {
+  margin-left: 74px;
+}
+.contributir_img {
+  width: 566.614px;
+  height: 572.243px;
+  border-radius: 50px;
+}
+
+.contributie_asteptam {
+  justify-content: center;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background: #ffcc4a;
+}
+
+.contributie_asteptam_text {
+  color: #181818;
+  font-family: "Lato";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 147.5%; /* 23.6px */
+  letter-spacing: 2.32px;
+  text-transform: uppercase;
+  margin: 3px;
+}
+
+.contributie_text {
+  color: #181818;
+  width: 561px;
+  font-family: "Cabin";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 116%; /* 52.2px */
+}
+
+.contributie_par_verde {
+  color: #4eaf4e;
+  width: 373.068px;
+  font-family: "Cabin";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 147.5%; /* 26.55px */
+}
+.contributir_par {
+  margin-bottom: 40px;
+  color: #595566;
+  width: 420px;
+  font-family: "Lato";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 147.5%; /* 23.6px */
+}
+.contributie_infodron {
+  margin-left: 10px;
+  color: #181818;
+  font-family: Cabin;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 116%; /* 23.2px */
+}
+
+.linie_contributie {
+  margin: 0px;
+  width: 289.421px;
+  height: 1px;
+  background: #d8d8d8;
+}
+
+.contributie_info {
+  display: flex;
+  flex-direction: column;
+}
+.contributie_infocontainer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.contributie_infocontainer_contactati {
+  display: flex;
+  margin-top: 40px;
+  border-radius: 42px;
+  border: 1px solid #ebebeb;
+  width: 210px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .MainRetea {
+    padding: 20px;
+  }
+
+  .colaborare_block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .colaborare_text {
+    width: 100%;
+    margin: 0;
+  }
+
+  .colaborare_title {
+    margin-top: 50px !important;
+    font-size: 24px;
+  }
+
+  .colaborare_slogan {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  .colaborare_content {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .beneficii_block {
+    margin-top: 20px;
+  }
+
+  .beneficii_introducere {
+    text-align: center;
+  }
+
+  .beneficii_oferim {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+  }
+
+  .beneficii_oferim_text {
+    font-size: 17px;
+  }
+
+  .beneficii_card_block {
+    flex-direction: column;
+  }
+
+  .beneficii_card {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .beneficii_card_title {
+    font-size: 20px;
+  }
+
+  .beneficii_card_content {
+    font-size: 14px;
+  }
+  .contributie_right {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+  }
+  .contributie_block {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .contributir_img {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .contributie_asteptam {
+    align-items: center;
+    width: auto;
+  }
+
+  .contributie_asteptam_text {
+    font-size: 16px;
+  }
+
+  .contributie_text_block {
+    width: 300px;
+    margin-left: 0px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contributie_text {
+    width: 100%;
+    text-align: center !important;
+    font-size: 28px;
+  }
+
+  .contributie_par_verde {
+    text-align: center !important;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .contributir_par {
+    margin-bottom: 20px;
+  }
+
+  .contributie_contacts {
+    display: flex;
+    justify-content: center!;
+    flex-direction: column;
+  }
+
+  .contributie_infocontainer {
+    width: 100% !important;
+    margin: 10px 0;
+  }
+  .contributie_infodron {
+    width: 100% !important;
+  }
+}

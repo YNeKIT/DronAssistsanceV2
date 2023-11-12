@@ -1,0 +1,103 @@
+.AvantajMain {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+.ContentAvantaje {
+  border-radius: 70px;
+  background: var(--Green-tertiary, #eff7f2);
+  width: 1265px;
+  height: 590px;
+}
+.firstline {
+  display: flex;
+  justify-content: center;
+}
+.cardcontentline {
+  display: flex;
+  justify-content: center;
+}
+
+.avantajetext {
+  margin-top: 72px;
+  margin-bottom: 62px;
+  margin-left: 123px;
+  color: #4b4b4b;
+  /* H2 */
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+}
+
+.avantajename {
+  color: var(--Primary-text, #1d2130);
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0px;
+  margin-left: 14px;
+}
+
+.avantajeparag {
+  width: 301px;
+  margin-left: 14px;
+  margin-top: 8px;
+  color: var(--Secondary-text, #525560);
+  /* Paragraph small */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+}
+
+.secondline {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .AvantajMain {
+    margin-top: 50px;
+  }
+
+  .ContentAvantaje {
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .firstline,
+  .cardcontentline,
+  .secondline {
+    display: block;
+    text-align: center;
+  }
+
+  .avantajetext {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 35px;
+  }
+
+  .avantajename {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .avantajeparag {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}

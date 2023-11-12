@@ -1,0 +1,137 @@
+.App {
+  background-color: #ffff;
+  max-width: 100%;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.containterhome {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  background-image: url("./Img/backgroundfinal.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 100;
+}
+
+.text-overlay {
+  margin-right: 700px;
+  margin-top: 170px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: left; /* Center vertically and horizontally */
+  width: 600px;
+  height: 440px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(5.5px);
+}
+.texttitle {
+  width: 307px;
+  margin-top: 0px;
+  color: #2d2d2d;
+  font-family: "Raleway";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.32px;
+}
+.homep {
+  color: var(--yellow-yellow-900, #612b00);
+  font-family: "Raleway";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  width: 400px; /* 24px */
+}
+
+.homebtn {
+  margin-top: 30px;
+  border-radius: 50px;
+  border: 0.644px solid #56c73a;
+  background: #56c73a;
+  display: flex;
+  width: 225px;
+  height: 45px;
+  padding: 7.731px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--white-1000, #fff);
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 22.5px */
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.content {
+  margin-left: 78px;
+  margin-top: 35px;
+  margin-bottom: 55px;
+}
+.sageata {
+  margin-left: 5px;
+}
+.homebtn:hover img.sageata {
+  transition: transform 0.6s;
+  transform: translateX(
+    5px
+  ); /* Move only the image 5px to the right on hover */
+}
+
+.homebtn:hover {
+  background: #47aa2f;
+  transition: 0.6s;
+}
+
+@media screen and (max-width: 760px) {
+  .App {
+    .App {
+      background-color: #ffff;
+      width: 100%;
+    }
+  }
+.texttitle{
+  text-align: center;
+}
+  .containterhome {
+    background-image: url("./Img/backgroundfinal.png");
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center !important;
+  }
+
+  .text-overlay {
+    background: rgba(255, 255, 255, 0.5);
+    margin-right: 0;
+    margin-top: 70px;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    backdrop-filter: none;
+    border-radius: 80px;
+    margin-bottom: 50px;
+  }
+  .content {
+    margin-left: 28px;
+    margin-top: 35px;
+    margin-bottom: 55px;
+  }
+  .homep {
+    text-align: center;
+    font-size: 16px;
+    width: 330px;
+  }
+
+.homebtn{
+  margin-left: 42px;
+}
+}

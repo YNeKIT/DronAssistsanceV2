@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+a:link {
+  text-decoration: none;
+  color: var(--gray-scale-800, #4b4b4b);
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--gray-scale-800, #4b4b4b);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--gray-scale-800, #4b4b4b);
+}
+
+a:active {
+  text-decoration: none;
+  color: var(--gray-scale-800, #4b4b4b);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: var(--gray-scale-800, #4b4b4b);
+  font-family: "Raleway";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  height: 60px;
+  z-index: 999999;
+  transition: 0.6s;
+}
+
+.navbar.scrolled {
+  transition: 0.6s;
+  background-color: #ebf6ee;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.left {
+  display: flex;
+}
+
+.dronlogo {
+  width: 156px;
+  height: 45px;
+  flex-shrink: 0;
+  margin-left: 3rem;
+}
+
+.djilogo {
+  width: 93px;
+  height: 45px;
+  flex-shrink: 0;
+  margin-left: 4rem;
+}
+
+.right ul {
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.right ul li {
+  margin-right: 30px;
+}
+
+.btnmagazin {
+  width: 90px;
+  height: 40px;
+  padding: 7.731px 15.462px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 22px;
+  margin-right: 12px;
+  border-radius: 2.577px;
+  border: 0.644px solid #56c73a;
+  background: #56c73a;
+  text-align: center;
+  transition: 0.5s;
+}
+.btncos {
+  display: flex;
+  width: 102px;
+  height: 40px;
+  padding: 7.731px 15.462px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 42px;
+  border: 0.644px solid #eed02a;
+  background: #eed02a;
+  border-radius: 2.577px;
+  transition: 0.5s;
+}
+.btncos:hover {
+  border: 0.644px solid #c9ae17;
+  background: #c9ae17;
+  transition: 0.5s;
+}
+.cart_img {
+  margin-left: 3px;
+  width: 19px;
+  height: 18px;
+}
+.cart_count {
+  color: white;
+  width: 5px;
+  height: 5px;
+  margin: 0px;
+  margin-bottom: 33px;
+}
+
+.btntext {
+  color: var(--white-1000, #fff);
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.btnmagazin:hover {
+  background: #47af2d;
+  transition: 0.5s;
+}
+
+.burger {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.moldovaflag {
+  width: 30px;
+  height: 30px;
+}
+
+.russiaflag {
+  width: 30px;
+  height: 32px;
+}
+.flags {
+  margin-right: 30px;
+}
+
+.burgermenu {
+  width: 30px;
+  height: 30px;
+}
+
+.mobile-menu {
+  background-color: #47af2d;
+}
+
+@media (max-width: 1335px) {
+  .navbar {
+    margin-left: 0px;
+    flex-direction: column;
+    padding: 10px 0;
+    height: auto;
+  }
+
+  .djilogo {
+    width: 93px;
+    height: 45px;
+    flex-shrink: 0;
+    margin-left: 0.5rem !important;
+  }
+
+  .dronlogo {
+    width: 156px;
+    height: 45px;
+    flex-shrink: 0;
+    margin-left: 30px !important;
+  }
+  .left {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .flags {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    margin-right: 40px;
+    gap: 10px;
+  }
+
+  .burger {
+    display: block;
+    margin: 10px 0;
+    margin-right: 30px !important;
+  }
+}
+@media (max-width: 423px) {
+  .burger {
+    display: block;
+    margin: 10px 0;
+  }
+  .flags {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .djilogo {
+    width: 93px;
+    height: 45px;
+    flex-shrink: 0;
+    margin-left: 0.5rem !important;
+  }
+
+  .dronlogo {
+    width: 120px;
+    height: 45px;
+    flex-shrink: 0;
+    margin-left: 10px !important;
+  }
+}
+
+@media (max-width: 394px) {
+  .burger {
+    display: block;
+    margin: 10px 0;
+  }
+  .flags {
+    margin-left: 20px !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .djilogo {
+    width: 80px;
+    height: 35px;
+    flex-shrink: 0;
+    margin-left: 0.5rem !important;
+  }
+
+  .dronlogo {
+    width: 90px;
+    height: 35px;
+    flex-shrink: 0;
+    margin-left: 5px !important;
+  }
+}

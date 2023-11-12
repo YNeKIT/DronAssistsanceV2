@@ -1,0 +1,126 @@
+.main_produs_page {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.produs_card_container_page {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.produs_title_text {
+  text-align: center;
+  color: #56c73a;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px; /* 91.667% */
+  letter-spacing: 7.2px;
+}
+
+.produs_text_big {
+  margin-bottom: 0px;
+  margin-top: 16px;
+  color: #56c73a;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 2.4px;
+}
+
+.produs_text_small {
+  width: 295px;
+  margin-top: 16px;
+  color: #525560;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+}
+.produs_img {
+  width: 460px;
+  height: 389px;
+}
+.produs_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.produsinfo {
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  display: flex;
+}
+
+.title_product {
+  color: #56c73a;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.price_product {
+  color: #4b4b4b;
+  font-family: Lato;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.descriere_product {
+  color: #56c73a;
+  font-family: Raleway;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.info_product {
+  width: 100%;
+  max-width: 500px;
+  color: var(--Dark-Primary, #2a254b);
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.produs_btn {
+  color: var(--White, #FFF);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  display: flex;
+  width: 147px;
+  height: 53px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid #4eaf4e;
+  background: #56c73a;
+}
