@@ -13,48 +13,35 @@ import { useTranslation } from "react-i18next";
 import { changeLanguage } from "i18next";
 import AppContext from "./CartContext";
 import { Link } from "react-router-dom";
-
-
+import BackgroundSlider from "./Components/Slider/BackgroundSlider";
+import MavikBackground from "./Img/backgroundMavik.jpg";
+import MavikBackground2 from "./Img/backgroundMavik2.jpeg";
+import AssistanceBg from "./Img/backgroundfinal.png";
+import Sunset from "./Img/backgroundsunset.jpg";
+import backedit4 from "./Img/backedit4.jpg";
+import backedit2 from "./Img/backgroundedit2.jpg";
+import backedit3 from "./Img/backgroundfinal.png";
 function App() {
- 
   const { t, i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
 
+  const images = [backedit2, backedit4, backedit3];
+
   return (
-   
     <div className="App">
       <NavBar />
-      <div className="containterhome">
-        <div className="text-overlay">
-          <div className="content">
-            <h1 className="texttitle">{t("hello_container1")}</h1>
-            <p className="homep">{t("hello_container2")}</p>
-            <Link to={"/SalesPage"}>
-              <button className="homebtn">
-                {t("hello_container3")}
-                <img className="sageata" src={Arrow} alt="sageata" />
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
-
+      <BackgroundSlider images={images} />
       <Numbers />
       <Performanta />
       <DroneContainer />
       <ServiciiBlock />
-
       <TehModern />
       <ImagesBlock />
-
       <MapContact />
-
       <Footer />
-    
     </div>
-   
   );
 }
 

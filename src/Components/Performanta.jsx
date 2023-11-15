@@ -1,7 +1,6 @@
 import "../Components/Performanta.css";
 import PerformantaImg from "../Img/performantaimg.png";
 import OnePoint from "../Img/onepoint.svg";
-
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { changeLanguage } from "i18next";
@@ -19,28 +18,30 @@ export default function Performanta() {
           src={PerformantaImg}
           alt="imagine performanta"
         />
-
         <div className="textPerformanta">
           <h2 className="performtitle">{t("performanta_1")}</h2>
           <h1 className="performslog">{t("performanta_2")}</h1>
           <div className="ulcontainers">
             <ul className="lista">
-              <li>
-                <img src={OnePoint} alt="imaginePoint" />
-              </li>
-              <li>
+              <li className="lista_li">
+                <img
+                  className="imaginePoint"
+                  src={OnePoint}
+                  alt="imaginePoint"
+                />
                 <h3 className="textul">{t("performanta_3")}</h3>
               </li>
               <li>
                 <p className="partext">{t("performanta_4")}</p>
               </li>
             </ul>
-
             <ul className="lista">
-              <li>
-                <img src={OnePoint} alt="imaginePoint" />
-              </li>
-              <li>
+              <li className="lista_li">
+                <img
+                  className="imaginePoint"
+                  src={OnePoint}
+                  alt="imaginePoint"
+                />
                 <h3 className="textul">{t("performanta_5")}</h3>
               </li>
               <li>
@@ -48,10 +49,12 @@ export default function Performanta() {
               </li>
             </ul>
             <ul className="lista">
-              <li>
-                <img src={OnePoint} alt="imaginePoint" />
-              </li>
-              <li>
+              <li className="lista_li">
+                <img
+                  className="imaginePoint"
+                  src={OnePoint}
+                  alt="imaginePoint"
+                />
                 <h3 className="textul">{t("performanta_7")}</h3>
               </li>
               <li>
@@ -59,10 +62,12 @@ export default function Performanta() {
               </li>
             </ul>
             <ul className="lista">
-              <li>
-                <img src={OnePoint} alt="imaginePoint" />
-              </li>
-              <li>
+              <li className="lista_li">
+                <img
+                  className="imaginePoint"
+                  src={OnePoint}
+                  alt="imaginePoint"
+                />
                 <h3 className="textul">{t("performanta_9")}</h3>
               </li>
               <li>

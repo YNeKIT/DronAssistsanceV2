@@ -12,9 +12,7 @@ import { useCart } from "../CartContext";
 import { useTranslation } from "react-i18next";
 import "./SalesPage.css";
 
-
 export default function SalesPage() {
- 
   const [items, setItems] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -61,7 +59,6 @@ export default function SalesPage() {
   const { t, i18n } = useTranslation();
 
   return (
-  
     <div className="salesmain">
       <NavBar />
       {showModal && (
@@ -87,18 +84,16 @@ export default function SalesPage() {
       {currentItems.length > 0 ? (
         <div className="cardcontainer">
           {currentItems.map((item, index) => (
-          
-              <Card
-                t={t}
-                item={item}
-                key={index}
-                name={item.Nume}
-                price={item.Preț}
-                info={item.Informații}
-                img={`./imag/Produse/${item.img}`}
-                handleClick={handleClick}
-              />
-        
+            <Card
+              t={t}
+              item={item}
+              key={index}
+              name={item.Nume}
+              price={item.Preț}
+              info={item.Informații}
+              img={`./imag/Produse/${item.img}`}
+              handleClick={handleClick}
+            />
           ))}
         </div>
       ) : (
@@ -128,6 +123,5 @@ export default function SalesPage() {
 
       <Footer />
     </div>
-  
   );
 }

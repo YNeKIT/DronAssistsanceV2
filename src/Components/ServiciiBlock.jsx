@@ -1,8 +1,8 @@
 import React from "react";
 import "./ServiciiBlock.css";
-import MoniIcon from "../Img/dronemonitorizare.png";
-import TratIcon from "../Img/dronetratamente.png";
-import EntomIcon from "../Img/droneentomofag.png";
+import MoniIcon from "../Img/droneiconcamera.svg";
+import TratIcon from "../Img/droneicontrat.svg";
+import EntomIcon from "../Img/droneiconwifi.svg";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 export default function ServiciiBlock() {
@@ -17,21 +17,21 @@ export default function ServiciiBlock() {
       <div className="ServiciiMain">
         <Link to={"/ServicesPage"}>
           <div className="ServiciiCard">
-            <img src={MoniIcon} />
+            <img className="droneicon_card" alt="droneiconcard" src={MoniIcon}  />
             <h1 className="ServText">{t("serviciicard_2")}</h1>
             <p className="ServInfo">{t("serviciicard_3")}</p>
           </div>
         </Link>
         <Link to={"/ServicesPage"}>
           <div className="ServiciiCard">
-            <img src={TratIcon} />
+            <img className="droneicon_card" alt="droneiconcard" src={TratIcon} />
             <h1 className="ServText"> {t("serviciicard_4")}</h1>
             <p className="ServInfo">{t("serviciicard_5")}</p>
           </div>
         </Link>
         <Link to={"/ServicesPage"}>
           <div className="ServiciiCard">
-            <img src={EntomIcon} />
+            <img className="droneicon_card" alt="droneiconcard" src={EntomIcon} />
             <h1 className="ServText"> {t("serviciicard_6")}</h1>
             <p className="ServInfo">{t("serviciicard_7")}</p>
           </div>

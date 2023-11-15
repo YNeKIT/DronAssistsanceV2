@@ -7,7 +7,12 @@
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
+.caracteristici{
+  width: 498px;
+}
+ 
 .produs_card_container_page {
+  
   margin-top: 100px;
   margin-bottom: 100px;
   display: flex;
@@ -57,6 +62,7 @@
   height: 389px;
 }
 .produs_card {
+  flex-basis: 360px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,7 +70,7 @@
 }
 
 .produsinfo {
-  gap: 3rem;
+  gap: 6rem;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
@@ -78,22 +84,27 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin-bottom: 16px;
 }
 .price_product {
+  margin-top: 0px;
   color: #4b4b4b;
   font-family: Lato;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 19px;
 }
 .descriere_product {
+  margin-top: 0px;
   color: #56c73a;
   font-family: Raleway;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin-bottom: 14px;
 }
 .info_product {
   width: 100%;
@@ -106,7 +117,7 @@
   line-height: normal;
 }
 .produs_btn {
-  color: var(--White, #FFF);
+  color: var(--White, #fff);
   font-family: Raleway;
   font-size: 18px;
   font-style: normal;
@@ -121,6 +132,43 @@
   gap: 10px;
   flex-shrink: 0;
   border-radius: 20px;
-  border: 1px solid #4eaf4e;
+  border: 1px solid #56c73a;
   background: #56c73a;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.produs_btn:hover {
+  background: #38a51d;
+  transition: 0.5s;
+}
+
+.button_container_produs{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.linieprodus {
+  margin-top: 0px;
+  width: 100%;
+  height: 1px;
+  background: #ebe8f4;
+  margin-bottom: 24px;
+}
+
+.descriere_product_content{
+  color: var(--Dark-Primary, #2A254B);
+font-family: Manrope;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.card_container_product {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 3rem;
+  width: 100%;
+  max-width: 1180px;
 }

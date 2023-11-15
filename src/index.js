@@ -35,7 +35,7 @@ root.render(
               <Route path="/CartPage" element={<CartPage />} />
               <Route path="/BiologicalTypes" element={<BiologicalTypes />} />
               <Route path="/ReteaPage" element={<ReteaPage />} />
-              <Route path="/ProdusPage" element={<ProdusPage />} />
+              <Route path="/product/:productId" element={<ProdusPage />} />
             </Routes>
           </CartContextProvider>
         </Suspense>

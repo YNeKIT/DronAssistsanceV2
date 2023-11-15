@@ -32,12 +32,17 @@
   transition: transform 0.3s, background-color 0.5s;
 }
 .ServiciiCard:hover {
-  transform: translateY(-10px); /* Move the card 10px upward on hover */
-  background: #eff7f2; /* Change the background color on hover */
+  transform: translateY(-10px); 
+  background: #eff7f2; 
+}
+.droneicon_card{
+width: 170px;
+height: 170px;
 }
 
-/* Default styles for .ServText */
 .ServText {
+  margin-bottom: 10px;
+  margin-top: 5px;
   color: var(--gray-scale-800, #4b4b4b);
   font-family: "Raleway";
   font-size: 30px;
@@ -59,7 +64,7 @@
   line-height: 150%;
 }
 .btnservice {
-  margin-top: 63px;
+  margin-top: 45px;
   border: none;
   border-radius: 15px;
   background: #56c73a;

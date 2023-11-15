@@ -48,7 +48,12 @@
   height: auto;
   width: 284px;
 }
-
+.lista_li{
+  display: flex;
+}
+.imaginePoint{
+  margin: 0px;
+}
 .textul {
   color: var(--gray-scale-800, #4b4b4b);
   font-family: "Raleway";

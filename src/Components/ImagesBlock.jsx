@@ -1,6 +1,5 @@
 import React from "react";
 import "./ImagesBlock.css";
-import VideoRec from "../Img/videoreclama.mp4";
 import ImgBlockOne from "../Img/imgforblock1.png";
 import ImgBlockTwo from "../Img/imgforblock2.png";
 import YouTube from "react-youtube";

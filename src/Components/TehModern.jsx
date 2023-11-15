@@ -1,6 +1,4 @@
 import React from "react";
-import Threepoint from "../Img/threepoint.svg";
-import Fourpoint from "../Img/fourpoint.svg";
 import OnePoint from "../Img/onepoint.svg";
 import TehImg from "../Img/tehmodernimg.png";
 import { useTranslation } from "react-i18next";
@@ -20,10 +18,12 @@ export default function TehModern() {
           <h1 className="performslog">{t("tehnologii_2")}</h1>
           <div className="ulcontainers">
             <ul className="lista">
-              <li>
-                <img src={OnePoint} alt="imaginePoint" />
-              </li>
-              <li>
+              <li className="lista_li">
+                <img
+                  className="imaginePoint"
+                  src={OnePoint}
+                  alt="imaginePoint"
+                />
                 <h3 className="textul">{t("tehnologii_3")}</h3>
               </li>
               <li>
@@ -32,10 +32,12 @@ export default function TehModern() {
             </ul>
 
             <ul className="lista">
-              <li>
-                <img src={OnePoint} alt="imaginePoint" />
-              </li>
-              <li>
+              <li className="lista_li">
+                <img
+                  className="imaginePoint"
+                  src={OnePoint}
+                  alt="imaginePoint"
+                />
                 <h3 className="textul">{t("tehnologii_5")}</h3>
               </li>
               <li>
@@ -43,10 +45,12 @@ export default function TehModern() {
               </li>
             </ul>
             <ul className="lista">
-              <li>
-                <img src={OnePoint} alt="imaginePoint" />
-              </li>
-              <li>
+              <li className="lista_li">
+                <img
+                  className="imaginePoint"
+                  src={OnePoint}
+                  alt="imaginePoint"
+                />
                 <h3 className="textul">{t("tehnologii_7")}</h3>
               </li>
               <li>
@@ -54,10 +58,12 @@ export default function TehModern() {
               </li>
             </ul>
             <ul className="lista">
-              <li>
-                <img src={OnePoint} alt="imaginePoint" />
-              </li>
-              <li>
+              <li className="lista_li">
+                <img
+                  className="imaginePoint"
+                  src={OnePoint}
+                  alt="imaginePoint"
+                />
                 <h3 className="textul">{t("tehnologii_9")}</h3>
               </li>
               <li>
