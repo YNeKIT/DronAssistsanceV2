@@ -374,3 +374,69 @@
     width: 100% !important;
   }
 }
+@media (max-width: 768px) {
+  .produsinfo {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem !important;
+  }
+
+  .imagineprodus img {
+    width: 70%;
+    height: auto;
+  }
+
+  .caracteristici {
+    padding: 40px;
+  }
+
+  .title_product {
+    margin-left: 40px;
+    font-size: 40px !important;
+    text-align: center !important;
+    width: 350px;
+    margin-bottom: 10px;
+  }
+
+  .price_product {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .descriere_product,
+  .descriere_product_content {
+    margin-left: 29px;
+    margin-right: 10px;
+    height: auto !important;
+    width: 340px;
+    font-size: 20px !important;
+  }
+
+  .produs_card_container_page,
+  .card_container_product,
+  .produs_card {
+    width: 100%;
+  }
+
+  .produs_text_big,
+  .produs_text_small {
+    font-size: 16px;
+  }
+
+  .button_container_produs {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+  }
+
+  .produs_btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-right: 38px;
+  }
+
+  .produs_title_text {
+    font-size: 24px !important;
+  }
+}

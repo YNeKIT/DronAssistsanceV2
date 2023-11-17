@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import Picatura from "../Img/picatura.svg";
-import Cloud from "../Img/cloudicon.svg"
-import GeoIcon from "../Img/geoicon.svg"
-import Pulverizare from "../Img/pulverizareicon.svg"
-import Complectatie from "../Img/complectatieicon.svg"
-import Battery from "../Img/batteryicon.svg"
+import Cloud from "../Img/cloudicon.svg";
+import GeoIcon from "../Img/geoicon.svg";
+import Pulverizare from "../Img/pulverizareicon.svg";
+import Complectatie from "../Img/complectatieicon.svg";
+import Battery from "../Img/batteryicon.svg";
 import { useParams } from "react-router-dom";
 import { useCart } from "../CartContext";
 import Modal from "../Components/Modal";
 import "./ProdusPage.css";
+import ArrowLeft from "../Img/arrow-left.svg";
+import { Skeleton } from "@mantine/core";
 
 export default function ProdusPage() {
   const { productId } = useParams();
@@ -54,18 +57,33 @@ export default function ProdusPage() {
   return (
     <div className="main_produs_page">
       <NavBar />
-     
       <div className="produsinfo">
-        
-        <div className="imagineprodus">
-          {product && (
+        {product ? (
+          <div className="imagineprodus">
+            <Link to={"/SalesPage"}>
+              <button className="btn_produs_back">
+                <img src={ArrowLeft} alt="arrowleft" className="arrowleft" />
+              </button>
+            </Link>
+
             <img
               className="produs_img"
               src={`../imag/Produse/${product.img}`}
               alt={product.Nume}
             />
-          )}
-        </div>
+          </div>
+        ) : (
+          <div>
+            {" "}
+            <Skeleton
+              className="skeleton"
+              height={380}
+              width={360}
+              animate={true}
+            />
+          </div>
+        )}
+
         <div className="caracteristici">
           {product ? (
             <>
@@ -81,67 +99,87 @@ export default function ProdusPage() {
               </div>
             </>
           ) : (
-            <p>Loading...</p>
+            <div className="skeleton_container">
+              <div>
+                <Skeleton
+                  className="skeleton"
+                  height={47}
+                  width={420}
+                  animate={true}
+                />
+                <Skeleton
+                  className="skeleton"
+                  height={38}
+                  width={164}
+                  animate={true}
+                />
+                <Skeleton
+                  className="skeleton"
+                  height={2}
+                  width={518}
+                  animate={true}
+                />
+                <Skeleton
+                  className="skeleton"
+                  height={33}
+                  width={280}
+                  animate={true}
+                />
+                <Skeleton
+                  className="skeleton"
+                  height={108}
+                  width={498}
+                  animate={true}
+                />
+              </div>
+            </div>
           )}
         </div>
       </div>
 
       <div className="produs_card_container_page">
         <h1 className="produs_title_text">CARACTERISTICI TEHNICE</h1>
-        <div className="card_container_product">  
- 
-     {product ? ( 
-      <>
-        <div className="produs_card">
-          <img src={Picatura} alt="Picatura" />
-          <h2 className="produs_text_big">Rezervor</h2>
-          <p className="produs_text_small">
-            {product.Rezervor}
-          </p>
-        </div>
-        <div className="produs_card">
-          <img src={GeoIcon} alt="Picatura" />
-          <h2 className="produs_text_big">Eficiența</h2>
-          <p className="produs_text_small">
-          {product.Eficienta}
-          </p>
-        </div>
+        <div className="card_container_product">
+          {product ? (
+            <>
+              <div className="produs_card">
+                <img src={Picatura} alt="Picatura" />
+                <h2 className="produs_text_big">Rezervor</h2>
+                <p className="produs_text_small">{product.Rezervor}</p>
+              </div>
+              <div className="produs_card">
+                <img src={GeoIcon} alt="Picatura" />
+                <h2 className="produs_text_big">Eficiența</h2>
+                <p className="produs_text_small">{product.Eficienta}</p>
+              </div>
 
-        <div className="produs_card">
-          <img src={Cloud} alt="cloud" />
-          <h2 className="produs_text_big">Platformă Cloud</h2>
-          <p className="produs_text_small">
-          {product.Platforma}
-          </p>
+              <div className="produs_card">
+                <img src={Cloud} alt="cloud" />
+                <h2 className="produs_text_big">Platformă Cloud</h2>
+                <p className="produs_text_small">{product.Platforma}</p>
+              </div>
+              <div className="produs_card">
+                <img src={Pulverizare} alt="Picatura" />
+                <h2 className="produs_text_big">Pulverizare</h2>
+                <p className="produs_text_small">{product.Pulverizare}</p>
+              </div>
+              <div className="produs_card">
+                <img src={Complectatie} alt="Picatura" />
+                <h2 className="produs_text_big">Complectație</h2>
+                <p className="produs_text_small">{product.Complectatie}</p>
+              </div>
+              <div className="produs_card">
+                <img src={Battery} alt="Picatura" />
+                <h2 className="produs_text_big">Acumulator</h2>
+                <p className="produs_text_small">{product.Acumulator}</p>
+              </div>
+            </>
+          ) : (
+            <div className="loading">
+              <h1> Loading... </h1>
+            </div>
+          )}
         </div>
-        <div className="produs_card">
-          <img src={Pulverizare} alt="Picatura" />
-          <h2 className="produs_text_big">Pulverizare</h2>
-          <p className="produs_text_small">
-          {product.Pulverizare}
-          </p>
-        </div>
-        <div className="produs_card">
-          <img src={Complectatie} alt="Picatura" />
-          <h2 className="produs_text_big">Complectație</h2>
-          <p className="produs_text_small">
-          {product.Complectatie}
-          </p>
-        </div>
-        <div className="produs_card">
-          <img src={Battery} alt="Picatura" />
-          <h2 className="produs_text_big">Acumulator</h2>
-          <p className="produs_text_small">
-          {product.Acumulator}
-          </p>
-        </div>
-        </>
-) : (    <div>
-
-<p>Loading...</p>
-</div>)}
-
-      </div>
       </div>
       <Footer />
       {showModal && (

@@ -17,6 +17,7 @@ import { Suspense } from "react";
 import "./18n";
 import { CartContextProvider } from "./CartContext";
 import ScrollToTop from "./Components/ScrollToTop";
+import TestPage from "./Pages/TestPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -36,6 +37,7 @@ root.render(
               <Route path="/BiologicalTypes" element={<BiologicalTypes />} />
               <Route path="/ReteaPage" element={<ReteaPage />} />
               <Route path="/product/:productId" element={<ProdusPage />} />
+              <Route path="skeleton" element={<TestPage />} />
             </Routes>
           </CartContextProvider>
         </Suspense>
