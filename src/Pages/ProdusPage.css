@@ -232,3 +232,34 @@
   line-height: 150%; /* 27px */
   color: #67ad55;
 }
+
+@media (max-width: 768px) { 
+
+
+.imagineprodus {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.produsinfo {
+  gap: 1rem !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  display: flex;
+}
+
+.imagineprodus {
+  margin-bottom:  10px;
+}
+
+.btn_produs_back {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.produs_btn{
+  margin: 0px;
+}
+}

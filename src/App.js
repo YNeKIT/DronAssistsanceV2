@@ -18,21 +18,22 @@ import MavikBackground from "./Img/backgroundMavik.jpg";
 import MavikBackground2 from "./Img/backgroundMavik2.jpeg";
 import AssistanceBg from "./Img/backgroundfinal.png";
 import Sunset from "./Img/backgroundsunset.jpg";
-import backedit4 from "./Img/backedit4.jpg";
-import backedit2 from "./Img/backgroundedit2.jpg";
-import backedit3 from "./Img/backgroundfinal.png";
+
+
+
+
 function App() {
   const { t, i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
 
-  const images = [backedit2, backedit4, backedit3];
+
 
   return (
     <div className="App">
       <NavBar />
-      <BackgroundSlider images={images} />
+      <BackgroundSlider  />
       <Numbers />
       <Performanta />
       <DroneContainer />

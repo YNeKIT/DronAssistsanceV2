@@ -41,26 +41,34 @@ export default function AboutUsPage() {
 
             <div className="containerinfo">
               <div className="infocard">
+                <div className="point_title">
                 <img src={OnePoint} className="point" alt="point" />
                 <h2 className="infocardtext">{t("aboutUs_6")}</h2>
+                </div>
                 <p className="infocardpar">{t("aboutUs_7")}</p>
               </div>
 
               <div className="infocard">
+              <div className="point_title">
                 <img src={OnePoint} className="point" alt="point" />
                 <h2 className="infocardtext">{t("aboutUs_8")}</h2>
+                </div>
                 <p className="infocardpar">{t("aboutUs_9")}</p>
               </div>
 
               <div className="infocard">
+              <div className="point_title">
                 <img src={OnePoint} className="point" alt="point" />
                 <h2 className="infocardtext">{t("aboutUs_10")}</h2>
+                </div>
                 <p className="infocardpar">{t("aboutUs_11")}</p>
               </div>
 
               <div className="infocard">
+              <div className="point_title">
                 <img src={OnePoint} className="point" alt="point" />
                 <h2 className="infocardtext">{t("aboutUs_12")}</h2>
+                </div>
                 <p className="infocardpar">{t("aboutUs_13")}</p>
               </div>
             </div>

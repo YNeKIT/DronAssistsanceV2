@@ -28,25 +28,25 @@ a:active {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  color: var(--gray-scale-800, #0f0b0b);
+  background-color: #ecf8f0;
   font-family: "Raleway";
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  height: 60px;
+  height: 55px;
   z-index: 999999;
   transition: 0.6s;
 }
 
 li:hover {
   transition: 0.5s;
-  color: white;
+  color: rgb(198, 193, 193);
 }
 
 .navbar.scrolled {
   transition: 0.6s;
-  background-color: #c7e4d0;
+  background-color: #c8e2d1;
 
   box-shadow: 0 0 10px rgba(75, 74, 74, 0.2);
 }
@@ -56,17 +56,18 @@ li:hover {
 }
 
 .dronlogo {
-  width: 156px;
-  height: 45px;
+  margin-top: 5px;
+  width: 135px;
+  height: 38px;
   flex-shrink: 0;
   margin-left: 3rem;
 }
 
 .djilogo {
-  width: 93px;
-  height: 55px;
+  width: 73px;
+  height: 47px;
   flex-shrink: 0;
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
 
 .right ul {
@@ -150,13 +151,13 @@ li:hover {
 }
 
 .moldovaflag {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .russiaflag {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 .flags {
   margin-right: 30px;
@@ -181,14 +182,14 @@ li:hover {
 
   .djilogo {
     width: 93px;
-    height: 45px;
+    height: 65px;
     flex-shrink: 0;
     margin-left: 0.5rem !important;
   }
 
   .dronlogo {
-    width: 156px;
-    height: 45px;
+    width: 156px !important;
+    height: 45px !important;
     flex-shrink: 0;
     margin-left: 30px !important;
   }
@@ -232,8 +233,8 @@ li:hover {
     gap: 5px;
   }
   .djilogo {
-    width: 93px;
-    height: 45px;
+    width: 80px;
+    height: 50px;
     flex-shrink: 0;
     margin-left: 0.5rem !important;
   }
@@ -259,13 +260,39 @@ li:hover {
   }
   .djilogo {
     width: 80px;
-    height: 35px;
+    height: 50px;
     flex-shrink: 0;
     margin-left: 0.5rem !important;
   }
 
   .dronlogo {
-    width: 90px;
+    width: 130px !important;
+    height: 35px;
+    flex-shrink: 0;
+    margin-left: 5px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+    margin: 10px 0;
+  }
+  .flags {
+    margin-left: 20px !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .djilogo {
+    width: 80px;
+    height: 52px;
+    flex-shrink: 0;
+    margin-left: 0.5rem !important;
+  }
+
+  .dronlogo {
+    width: 130px !important;
     height: 35px;
     flex-shrink: 0;
     margin-left: 5px !important;

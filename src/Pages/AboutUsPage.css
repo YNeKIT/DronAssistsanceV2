@@ -2,6 +2,7 @@
 
 .mainabout {
   overflow-x: hidden;
+  background-color: white;
 }
 
 .avatarpart {
@@ -65,14 +66,20 @@
 }
 
 .rightside {
+  width: 550px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 150px;
+  margin-left: 130px;
 }
-
+.point_title {
+  display: flex;
+  width: 400px;
+  margin: 0px;
+}
 .infocard {
   width: 231px;
+  margin-right: 10px;
 }
 
 .point {
@@ -115,8 +122,8 @@
 
 .containerinfo {
   margin: 5px;
-  gap: 1.4em;
-  width: 487px;
+  gap: 2rem;
+  width: 520px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -210,21 +217,24 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../Img/imgechipa.png);
-  filter: brightness(50%);
-  z-index: -1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Img/imgechipa.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
 }
 
 .text_echipa {
   margin-top: 100px;
   color: #fff;
   text-align: center;
-  /* H2 */
-  font-family: Roboto;
+  font-family: Raleway;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 57.6px */
+  letter-spacing: 10px;
+  z-index: 10;
 }
 
 .btn_viitor {
@@ -264,22 +274,17 @@
     margin-left: 10px;
   }
 
-  .leftside,
-  .rightside {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .ghilimele {
     display: none;
   }
 
-  .containerside {
-    margin-left: 20px !important;
-    flex-direction: column;
-    margin: 20px 0;
+  .container_background_viitor {
+    width: 360px;
+    height: 300px;
+  }
+
+  .text_echipa {
+    font-size: 25px;
   }
 
   .infocard {
@@ -297,10 +302,13 @@
   .titleright,
   .parlef {
     text-align: center;
-  }
-
-  .center-content {
-    margin-bottom: 50px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 350px;
+    margin-left: 0px;
+    align-self: center !important;
   }
 
   .title_proiectul_nostru {
@@ -317,35 +325,116 @@
     text-align: center;
   }
 
+  .proiectul_nostru {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+
+  .viitorul_agriculturii_text {
+    display: flex;
+    justify-content: center !important ;
+    flex-direction: column;
+    align-items: center !important;
+  }
   .text_viitor_agricultura {
     color: #56c73a;
     height: auto;
-    width: 100%;
+    width: 350px;
     text-align: center;
-    font-size: 36px;
+    font-size: 30px;
   }
 
   .par_viitor_agricult {
     height: auto;
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 400px;
+    width: 330px;
     font-size: 14px;
-  }
-
-  .container_background_viitor {
-    width: 100%;
-    height: auto;
-  }
-
-  .text_echipa {
-    margin-top: 50px;
-    font-size: 36px;
   }
 
   .btn_viitor {
     width: 100%;
     height: 48px;
     font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .HomeServicii {
+    position: relative;
+  }
+
+  .dronebg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .containerside {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftside {
+    align-items: center;
+    display: flex;
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .rightside {
+    margin: 0px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center !important;
+    text-align: center;
+    width: 300px;
+    height: 100%;
+  }
+
+  .avatarpart {
+    margin-top: 20px;
+  }
+
+  .avatarinfo {
+    margin-top: 10px;
+  }
+
+  .bottom_avatar_part {
+    margin-top: 10px;
+    text-align: center !important;
+    width: 300px;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+
+  .titleright {
+    margin-top: 20px;
+  }
+
+  .containerinfo {
+    margin-top: 20px;
+    width: 300px;
+  }
+
+  .infocard {
+    margin-bottom: 20px;
+  }
+
+  .point_title {
+    display: flex;
+    align-items: center;
+  }
+
+  .point {
+    margin-right: 10px;
+  }
+
+  .infocardtext,
+  .infocardpar {
+    text-align: left;
   }
 }

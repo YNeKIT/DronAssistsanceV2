@@ -74,7 +74,6 @@ export default function ProdusPage() {
           </div>
         ) : (
           <div>
-            {" "}
             <Skeleton
               className="skeleton"
               height={380}
@@ -191,3 +190,12 @@ export default function ProdusPage() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+

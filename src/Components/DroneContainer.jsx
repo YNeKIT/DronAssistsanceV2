@@ -19,7 +19,7 @@ export default function DroneContainer() {
         <img src={T30} alt="t30dron" />
         <img src={Discount1} alt="discountimg" />
         <h1 className="carddronetext">T30</h1>
-        <Link to={"/SalesPage"}>
+        <Link to={"/product/14"}>
           <button className="carddronebtn">{t("dronecontainer1")}</button>
         </Link>
       </div>
@@ -28,7 +28,7 @@ export default function DroneContainer() {
         <img src={T10} alt="t10dron" />
         <img src={Discount2} alt="discountimg" />
         <h1 className="carddronetext">T10</h1>
-        <Link to={"/SalesPage"}>
+        <Link to={"product/96"}>
           <button className="carddronebtn">{t("dronecontainer1")}</button>
         </Link>
       </div>
@@ -37,7 +37,7 @@ export default function DroneContainer() {
         <img src={Mavik} alt="mavikdron" />
         <img src={Discount3} alt="discountimg" />
         <h1 className="carddronetext">Mavic 3</h1>
-        <Link to={"/SalesPage"}>
+        <Link to={"/product/32"}>
           <button className="carddronebtn">{t("dronecontainer1")}</button>
         </Link>
       </div>

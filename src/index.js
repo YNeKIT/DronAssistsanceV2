@@ -18,6 +18,9 @@ import "./18n";
 import { CartContextProvider } from "./CartContext";
 import ScrollToTop from "./Components/ScrollToTop";
 import TestPage from "./Pages/TestPage";
+import ErrorPage from "./Pages/ErrorPage";
+
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -26,7 +29,7 @@ root.render(
     <BrowserRouter>
       <ScrollToTop />
       <React.StrictMode>
-        <Suspense fallback="loading">
+      
           <CartContextProvider>
             <Routes>
               <Route path="/" element={<App />} />
@@ -35,12 +38,16 @@ root.render(
               <Route path="/ServicesPage" element={<ServicesPages />} />
               <Route path="/CartPage" element={<CartPage />} />
               <Route path="/BiologicalTypes" element={<BiologicalTypes />} />
+          
               <Route path="/ReteaPage" element={<ReteaPage />} />
               <Route path="/product/:productId" element={<ProdusPage />} />
-              <Route path="skeleton" element={<TestPage />} />
+              <Route path="*" element={<ErrorPage />} />
+             
+        
+       
             </Routes>
           </CartContextProvider>
-        </Suspense>
+        
       </React.StrictMode>
     </BrowserRouter>
   </MantineProvider>

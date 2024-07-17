@@ -1,4 +1,5 @@
-import Logodron from "../Img/dronlogo.png";
+// NavBar.jsx
+import Logodron from "../Img/dronlogoedit3.png";
 import Djilogo from "../Img/logodji.png";
 import "../Components/NavBar.css";
 import { Link } from "react-router-dom";
@@ -10,14 +11,16 @@ import Cart from "../Img/cartimg.png";
 import Burger from "../Img/burgermenu.svg";
 import { useTranslation } from "react-i18next";
 import { useCart } from "../CartContext";
+
 export default function NavBar() {
   const [scrolling, setScrolling] = useState(false);
   const [menuActive, setMenuActive] = useState(false);
 
   const { t, i18n } = useTranslation();
-  const changeLanguage = (language) => {
+  const changeLanguageNavBar = (language) => {
     i18n.changeLanguage(language);
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -32,10 +35,8 @@ export default function NavBar() {
   };
 
   const { cart } = useCart();
-  const totalItemsInCart = cart.reduce(
-    (total, item) => total + item.quantity,
-    0
-  );
+  const totalItemsInCart = cart.reduce((total, item) => total + item.quantity, 0);
+
   return (
     <div className={`navbar ${scrolling ? "scrolled" : ""}`}>
       <div className="left">
@@ -47,13 +48,13 @@ export default function NavBar() {
               src={MD}
               alt="mdflag"
               className="moldovaflag"
-              onClick={() => changeLanguage("ro")}
+              onClick={() => changeLanguageNavBar("ro")}
             />
             <img
               src={RU}
               alt="mdflag"
               className="russiaflag"
-              onClick={() => changeLanguage("ru")}
+              onClick={() => changeLanguageNavBar("ru")}
             />
             <img
               src={Burger}
@@ -73,13 +74,13 @@ export default function NavBar() {
               src={MD}
               alt="mdflag"
               className="moldovaflag"
-              onClick={() => changeLanguage("ro")}
+              onClick={() => changeLanguageNavBar("ro")}
             />
             <img
               src={RU}
               alt="mdflag"
               className="russiaflag"
-              onClick={() => changeLanguage("ru")}
+              onClick={() => changeLanguageNavBar("ru")}
             />
           </div>
           <Link to={"/"}>

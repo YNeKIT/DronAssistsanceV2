@@ -1,30 +1,17 @@
 import React, { useState, useEffect } from "react";
-import "./BackgroundSlider.css"; // Import your CSS file
+import "./BackgroundSlider.css"; 
 import { useTranslation } from "react-i18next";
 import Arrow from "../../Img/arrowhome.svg";
 import Lottie from "lottie-react";
 import SlideBottom from "../../Img/slideBottom.json";
 import { Link } from "react-router-dom";
 
-const BackgroundSlider = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+import VideoBackground from '../../Img/videot10.mp4';
+
+const BackgroundSlider = () => {
   const [showTitle, setShowTitle] = useState(false);
   const [showPar, setShowPar] = useState(false);
-
-  const selectImage = (index) => {
-    console.log("Clicked index:", index);
-    setCurrentIndex(index);
-  };
-
-  const renderButtons = () => {
-    return images.map((_, index) => (
-      <button
-        key={index}
-        onClick={() => selectImage(index)}
-        className={currentIndex === index ? "active" : ""}
-      ></button>
-    ));
-  };
+  const { t } = useTranslation();
 
   useEffect(() => {
     const titleDelay = setTimeout(() => {
@@ -41,41 +28,30 @@ const BackgroundSlider = ({ images }) => {
     };
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [images]);
-
-  const { t, i18n } = useTranslation();
-
   return (
-    <div className="background-slider">
-      <div
-        className="slider-image"
-        style={{ backgroundImage: `url(${images[currentIndex]})` }}
-      >
-        <div className={`divmare ${showTitle ? "show" : ""}`}>
-          <h1 className={`title_slider ${showTitle ? "show" : ""}`}>
+    <div className="bg-slider">
+      <video className="bg-video" autoPlay loop muted>
+        <source src={VideoBackground} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="bg-overlay"></div>
+      <div className="bg-slider-content">
+        <div className={`bg-slider-div ${showTitle ? "bg-slider-show" : ""}`}>
+          <h1 className={`bg-slider-title ${showTitle ? "bg-slider-show" : ""}`}>
             {t("hello_container1")}
           </h1>
-          <p className={`par_slider ${showPar ? "show" : ""}`}>
+          <p className={`bg-slider-paragraph ${showPar ? "bg-slider-show" : ""}`}>
             {t("hello_container2")}
           </p>
           <Link to={"/SalesPage"}>
-            <button className="cumpara_drona">
-              <p className="btn_text_cumpara">{t("hello_container3")}</p>{" "}
+            <button className="bg-slider-buy-drone">
+              <p className="bg-slider-buy-drone-text">{t("hello_container3")}</p>
             </button>
           </Link>
         </div>
-        <div className="lottie_slider">
-          <Lottie className="slidebottom" animationData={SlideBottom} />
+        <div className="bg-slider-lottie">
+          <Lottie className="bg-slider-slidebottom" animationData={SlideBottom} />
         </div>
-        <div className="button-container">{renderButtons()}</div>
       </div>
     </div>
   );

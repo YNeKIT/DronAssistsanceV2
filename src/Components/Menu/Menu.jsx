@@ -10,9 +10,12 @@ export default function Menu({ setActive, setMenuActive, active }) {
     i18n.changeLanguage(language);
   };
   return (
-    <div className={active ? "menu active" : "menu"}>
+    <div
+      className={active ? "menu active" : "menu"}
+      onClick={() => setActive(false)}
+    >
       <div className="blur" />
-      <div className="menu_content">
+      <div className="menu_content" onClick={(e) => e.stopPropagation()}>
         <div className="menu_header"></div>
         <ul className="menuItems">
           <Link to={"/"}>
@@ -21,7 +24,7 @@ export default function Menu({ setActive, setMenuActive, active }) {
           <Link to={"/ServicesPage"}>
             <li className="listamenu">{t("navbar_item3")}</li>
           </Link>
-          <Link to={"/BiologicalTipes"}>
+          <Link to={"/BiologicalTypes"}>
             <li className="listamenu">{t("navbar_item1")}</li>
           </Link>
           <Link to={"/ReteaPage"}>

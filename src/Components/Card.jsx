@@ -14,14 +14,14 @@ export default function Card({
 }) {
   return (
     <div className="card">
-       <Link
-              to={{
-                pathname: `/product/${item.id}`, 
-                state: { product: item },
-              }}
-              key={item.id}
-            >
-      <img className="imgcard" src={img} alt={name} />
+      <Link
+        to={{
+          pathname: `/product/${item.id}`,
+          state: { product: item },
+        }}
+        key={item.id}
+      >
+        <img className="imgcard" src={img} alt={name} />
       </Link>
       <h1 className="cardname">{name}</h1>
       <p className="cardprice">{price} EUR</p>
